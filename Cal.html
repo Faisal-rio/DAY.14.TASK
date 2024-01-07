@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="ca.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simple Calculator</h1>
+      <div class="calculator">
+        <input type="text" id="result" class="form-control" disabled />
+        <div class="keys">
+          <button class="btn btn-primary" onclick="appendNumber('1')">1</button>
+          <button class="btn btn-primary" onclick="appendNumber('2')">2</button>
+          <button class="btn btn-primary" onclick="appendNumber('3')">3</button>
+          <button class="btn btn-primary" onclick="appendOperator('+')">
+            +
+          </button>
+          <button class="btn btn-primary" onclick="appendNumber('4')">4</button>
+          <button class="btn btn-primary" onclick="appendNumber('5')">5</button>
+          <button class="btn btn-primary" onclick="appendNumber('6')">6</button>
+          <button class="btn btn-primary" onclick="appendOperator('-')">
+            -
+          </button>
+          <button class="btn btn-primary" onclick="appendNumber('7')">7</button>
+          <button class="btn btn-primary" onclick="appendNumber('8')">8</button>
+          <button class="btn btn-primary" onclick="appendNumber('9')">9</button>
+          <button class="btn btn-primary" onclick="appendOperator('*')">
+            *
+          </button>
+          <button class="btn btn-primary" onclick="appendNumber('0')">0</button>
+          <button class="btn btn-primary" onclick="clearResult()">C</button>
+          <button class="btn btn-primary" onclick="calculateResult()">=</button>
+          <button class="btn btn-primary" onclick="appendOperator('/')">
+            /
+          </button>
+          <button class="btn btn-primary" onclick="appendOperator('%')">
+            %
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="cal.js"></script>
+  </body>
+</html>
